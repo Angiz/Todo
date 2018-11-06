@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.aneta.todo.MainActivity">
+    <item
+        android:id="@+id/dodaj"
+        android:orderInCategory="100"
+        android:title="Dodaj zadanie"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/usun"
+        android:orderInCategory="100"
+        android:title="Usun zadanie"
+        app:showAsAction="never" />
+</menu>
