@@ -3,7 +3,10 @@
     <string name="action_settings">Settings</string>
 
     <string-array name="items">
-        <item>Tasks</item>
+        <item>Posprzatac pokoj</item>
+        <item>Zrobic obiad</item>
+        <item>Jakies inne przykladowe zadanie</item>
+        <item>Jakies inne drugie przykladowe zadanie</item>
     </string-array>
 
 </resources>

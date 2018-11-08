@@ -24,6 +24,10 @@ public class MainActivity extends AppCompatActivity {
     private List<String> Tasks = new ArrayList<>();
 
 
+
+    public static boolean isActionMode = false;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,10 +49,11 @@ public class MainActivity extends AppCompatActivity {
         public void onItemCheckedStateChanged(ActionMode mode, int position, long id, boolean checked) {
 
         }
-
+            @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
             MenuInflater inflater = mode.getMenuInflater();
             inflater.inflate(R.menu.menu_main, menu);
+            isActionMode = true;
             return true;
         }
 
@@ -64,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onDestroyActionMode(ActionMode mode) {
+            isActionMode = false;
 
         }
     };
